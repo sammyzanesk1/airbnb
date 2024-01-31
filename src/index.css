@@ -42,54 +42,28 @@ section {
   margin-top: 0;
 }
 
-.images {
-  width: 240px;
-  aspect-ratio: 5/6;
-  border-radius: 4%;
-}
-
-.cardA--container {
-  display: flex;
-  flex-direction: column;
+.card {
+  width: 175px;
   font-size: 12px;
-  justify-content: center;
-  align-items: start;
-  margin-left: 28px;
-  margin-top: 10px;
-  gap: 18px;
+}
+.card--image {
+  width: 100%;
+  border-radius: 9px;
 }
 
-.rank--text {
-  padding: 2px 1px;
-  color: grey;
-}
-
-.card--icon {
+.card--stats {
   display: flex;
-  flex-direction: row;
-  gap: 8px;
   align-items: center;
-  height: 18px;
+}
+
+.gray {
+  color: #918e9b;
+}
+
+.bold {
+  font-weight: bold;
 }
 
 body * {
-  border: 1px red solid;
-}
-
-.cardtext--box {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  align-items: start;
-  height: 70px;
-  gap: 8px;
-}
-
-.card {
-  display: flex;
-  flex-direction: row;
-}
-
-.price {
-  font-weight: bold;
+  border: 2px blue solid;
 }

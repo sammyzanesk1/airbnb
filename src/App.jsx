@@ -1,5 +1,5 @@
 import Navbar from "./components/Navbar";
-import Hero from "./components/Hero";
+// import Hero from "./components/Hero";
 import Card from "./components/Card";
 
 export default function App() {
@@ -7,7 +7,7 @@ export default function App() {
     <>
       <div className="app--container">
         <Navbar />
-        <Hero />
+        {/* <Hero /> */}
       </div>
       <Card />
     </>

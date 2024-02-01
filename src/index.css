@@ -132,6 +132,7 @@ section {
   align-items: center;
   gap: 50px;
   padding: 27px 0px 20px 33px;
+  overflow-x: hidden;
 
   /* background-color: aquamarine; */
 }
@@ -143,12 +144,12 @@ section {
   flex: 0 0 auto;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .card--image {
   min-height: 380px;
   border-radius: 7%;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
-    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px;
   margin-bottom: 4px;
 }
 
@@ -159,6 +160,25 @@ section {
 .card--stats {
   display: flex;
   align-items: center;
+}
+
+.cardcrest {
+  position: absolute;
+  top: -2px;
+  left: 1px;
+  background-color: white;
+  margin-top: 2px;
+  margin-left: -1px;
+  padding: 7px 4px 12px 4px;
+  border-radius: 2px;
+  font-weight: bold;
+  border-radius: 10px;
+  font-size: 12px;
+}
+
+.sold {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: red;
 }
 
 /* body * {

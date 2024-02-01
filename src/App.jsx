@@ -35,7 +35,7 @@
 ///////////////////////
 
 import Navbar from "./components/Navbar";
-// import Hero from "./components/Hero";
+import Hero from "./components/Hero";
 import Card from "./components/Card";
 import CardData from "./components/CardData";
 
@@ -61,21 +61,68 @@ import CardData from "./components/CardData";
 //   );
 // }
 
-///workin wit arrays and props...
+///workin wit arrays and props...pass in d mapped props individulally.
+
+// export default function App() {
+//   const PropedCard = CardData.map((card) => {
+//     return (
+//       <Card
+//         key={card.id}
+//         img={card.coverImg}
+//         rating={card.stats.rating}
+//         reviewCount={card.stats.reviewCount}
+//         location={card.location}
+//         title={card.title}
+//         price={card.price}
+//         openSpots={card.openSpots}
+//       />
+//     );
+//   });
+
+//   return (
+//     <>
+//       <div className="app--container">
+//         <Navbar />
+//         <Hero />
+//       </div>
+//       <section className="cards-list">{PropedCard}</section>
+//     </>
+//   );
+// }
+/////////////////////////////
+
+////dealin wit mapped prop..passin in d mappped object as d prop
+
+// export default function App() {
+//   const PropedCard = CardData.map((card) => {
+//     return (
+//       <Card
+//         key={card.id}
+//         card={card} //passin d props as an object for eac array
+//       />
+//     );
+//   });
+
+//   return (
+//     <>
+//       <div className="app--container">
+//         <Navbar />
+//         <Hero />
+//       </div>
+//       <section className="cards-list">{PropedCard}</section>
+//     </>
+//   );
+// }
+
+/////////destructurin d mapped ovbject .....
 
 export default function App() {
-  console.log(CardData);
-
   const PropedCard = CardData.map((card) => {
-    console.log(card.coverImg);
     return (
       <Card
-        img={card.coverImg}
-        rating={card.stats.rating}
-        reviewCount={card.stats.reviewCount}
-        location={card.location}
-        title={card.title}
-        price={card.price}
+        key={card.id}
+        // card={card} //passin d props as an object for eac array
+        {...card} //passin in d destructured prop....use one level of dot
       />
     );
   });
@@ -84,6 +131,7 @@ export default function App() {
     <>
       <div className="app--container">
         <Navbar />
+        <Hero />
       </div>
       <section className="cards-list">{PropedCard}</section>
     </>

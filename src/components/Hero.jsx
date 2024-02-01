@@ -16,7 +16,7 @@
 // }
 
 ///props wit arrays
-import hickerjpeg from "../assets/airbnbhicker.jpg";
+import hickerjpeg from "/assets/airbnbhicker.jpg";
 
 export default function Hero() {
   return (

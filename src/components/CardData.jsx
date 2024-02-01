@@ -16,7 +16,7 @@ export default [
       reviewCount: 30,
     },
     location: "Online",
-    openSports: 24,
+    openSpots: 0,
   },
   {
     id: 2,
@@ -30,7 +30,7 @@ export default [
       reviewCount: 30,
     },
     location: "Offline",
-    openSpots: 20,
+    openSpots: 9,
   },
   {
     id: 3,
@@ -43,8 +43,8 @@ export default [
       rating: 3.0,
       reviewCount: 10,
     },
-    location: "Brazil",
-    openSports: 24,
+    location: "Online",
+    openSpots: 24,
   },
   {
     id: 4,
@@ -58,6 +58,6 @@ export default [
       reviewCount: 2,
     },
     location: "Online",
-    openSports: 2,
+    openSpots: 2,
   },
 ];

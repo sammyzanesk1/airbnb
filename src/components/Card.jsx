@@ -1,22 +1,45 @@
-import airbnbrunner from "../assets/airbnbrunner.webp";
+//basic props
 // import airbnbweddindress from "../assets/weddindress.jpg";
+// import { FaStar } from "react-icons/fa";
+
+// export default function Card(props) {
+//   return (
+//     <div className="card">
+//       <img src={props.img} className="card--image" />
+//       <div className="card--stats">
+//         <span>
+//           <FaStar size="1.2rem" color="red" className="card--star" />
+//         </span>
+//         <span>{props.rating}</span>
+//         <span className="gray"> ({props.reviewCount}) •</span>
+//         <span> {props.country}</span>
+//       </div>
+//       <p>{props.title}</p>
+//       <p>
+//         <span className="bold">From ${props.price}</span> / person
+//       </p>
+//     </div>
+//   );
+// }
+
+////////////////props wit arrays
 import { FaStar } from "react-icons/fa";
 
-export default function Card() {
+export default function Card(props) {
   return (
     <div className="card">
-      <img src={airbnbrunner} className="card--image" />
+      <img src={props.img} className="card--image" />
       <div className="card--stats">
         <span>
           <FaStar size="1.2rem" color="red" className="card--star" />
         </span>
-        <span className="gray">5.0</span>
-        <span className="gray"> (6) •</span>
-        <span> USA</span>
+        <span>{props.rating}</span>
+        <span className="gray"> ({props.reviewCount}) •</span>
+        <span> {props.location}</span>
       </div>
-      <p>Life Lessons wit Katie Zadares</p>
+      <p className="card--title">{props.title}</p>
       <p>
-        <span className="bold">From $136</span> / person
+        <span className="bold">From ${props.price}</span> / person
       </p>
     </div>
   );
